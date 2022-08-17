@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "search-module-module">
+     <test name = "search-test-java">
+         <parameter name = "keyWord"  value = "java" />
+         <classes>
+             <class name = "com.searchmodule.test.ModuleSearchTest" />
+         </classes>
+     </test>
+    <test name = "search-test-docker">
+        <parameter name = "keyWord"  value = "docker" />
+        <classes>
+            <class name = "com.searchmodule.test.ModuleSearchTest" />
+        </classes>
+    </test>
+    <test name = "search-test-k8s">
+        <parameter name = "keyWord"  value = "kubernetes" />
+        <classes>
+            <class name = "com.searchmodule.test.ModuleSearchTest" />
+        </classes>
+    </test>
+    <test name = "search-test-webdriver">
+        <parameter name = "keyWord"  value = "WebDriver" />
+        <classes>
+            <class name = "com.searchmodule.test.ModuleSearchTest" />
+        </classes>
+    </test>
+    <test name = "search-test-API">
+        <parameter name = "keyWord"  value = "RestAPI" />
+        <classes>
+            <class name = "com.searchmodule.test.ModuleSearchTest" />
+        </classes>
+    </test>
+    <test name = "search-test-JsS">
+        <parameter name = "keyWord"  value = "JavaScript" />
+        <classes>
+            <class name = "com.searchmodule.test.ModuleSearchTest" />
+        </classes>
+    </test>
+
+</suite>

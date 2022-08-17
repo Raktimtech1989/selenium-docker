@@ -1,0 +1,35 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub:3.14
+    ports:
+      - "4444:4444"
+  chrome:
+    image: selenium/node-chrome:3.14
+    shm_size: '1gb'
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+    volumes:
+      - ./downloads:/home/seluser/Downloads      
+  firefox:
+    image: selenium/node-firefox:3.14
+    shm_size: '1gb'   
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+    volumes:
+      - ./downloads:/home/seluser/Downloads
+  book-flight-module:
+    image: raktimtech1989/selenium-docker:v1
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - HUB_HOST=192.168.0.100
+      - BROWSER=firefox
+      - MODULE=book-flight-module.xml
+    volumes:
+      - ./output/book-flight-result:/usr/share/udemy/test-output

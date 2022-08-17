@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [search-module-module]">
+  <test thread-count="5" name="search-test-java(failed)">
+    <parameter name="keyWord" value="java"/>
+    <classes>
+      <class name="com.searchmodule.test.ModuleSearchTest">
+        <methods>
+          <include name="searchContent" invocation-numbers="0"/>
+          <include name="quitDriver"/>
+          <include name="setUpDriver"/>
+        </methods>
+      </class> <!-- com.searchmodule.test.ModuleSearchTest -->
+    </classes>
+  </test> <!-- search-test-java(failed) -->
+  <test thread-count="5" name="search-test-docker(failed)">
+    <parameter name="keyWord" value="docker"/>
+    <classes>
+      <class name="com.searchmodule.test.ModuleSearchTest">
+        <methods>
+          <include name="searchContent" invocation-numbers="0"/>
+          <include name="quitDriver"/>
+          <include name="setUpDriver"/>
+        </methods>
+      </class> <!-- com.searchmodule.test.ModuleSearchTest -->
+    </classes>
+  </test> <!-- search-test-docker(failed) -->
+  <test thread-count="5" name="search-test-k8s(failed)">
+    <parameter name="keyWord" value="kubernetes"/>
+    <classes>
+      <class name="com.searchmodule.test.ModuleSearchTest">
+        <methods>
+          <include name="searchContent" invocation-numbers="0"/>
+          <include name="quitDriver"/>
+          <include name="setUpDriver"/>
+        </methods>
+      </class> <!-- com.searchmodule.test.ModuleSearchTest -->
+    </classes>
+  </test> <!-- search-test-k8s(failed) -->
+  <test thread-count="5" name="search-test-API(failed)">
+    <parameter name="keyWord" value="RestAPI"/>
+    <classes>
+      <class name="com.searchmodule.test.ModuleSearchTest">
+        <methods>
+          <include name="searchContent" invocation-numbers="0"/>
+          <include name="quitDriver"/>
+          <include name="setUpDriver"/>
+        </methods>
+      </class> <!-- com.searchmodule.test.ModuleSearchTest -->
+    </classes>
+  </test> <!-- search-test-API(failed) -->
+  <test thread-count="5" name="search-test-JsS(failed)">
+    <parameter name="keyWord" value="JavaScript"/>
+    <classes>
+      <class name="com.searchmodule.test.ModuleSearchTest">
+        <methods>
+          <include name="searchContent" invocation-numbers="0"/>
+          <include name="quitDriver"/>
+          <include name="setUpDriver"/>
+        </methods>
+      </class> <!-- com.searchmodule.test.ModuleSearchTest -->
+    </classes>
+  </test> <!-- search-test-JsS(failed) -->
+</suite> <!-- Failed suite [search-module-module] -->
